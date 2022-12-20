@@ -10,6 +10,7 @@ export function Store() {
         {storeItems.map(item => (
           <Col key={item.id}>
             <StoreItem {...item} />
+            {/* ...item spread notation to pass all item's props */}
           </Col>
         ))}
       </Row>
