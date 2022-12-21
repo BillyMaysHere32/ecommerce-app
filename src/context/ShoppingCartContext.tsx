@@ -53,7 +53,7 @@ export function ShoppingCartProvider( { children }: ShoppingCartProviderProps) {
     function decreaseCartQuantity(id: number){
         setCartItems(currItems => {
             if (currItems.find(item => item.id === id)?.quantity === 1) {
-                return currItems.filter(item => item.id ! == id);
+                return currItems.filter(item => item.id !== id);
                 {/* if item is in cart with quantity of 1, item will be removed */}
             } else {
                 return currItems.map(item => {
@@ -70,7 +70,7 @@ export function ShoppingCartProvider( { children }: ShoppingCartProviderProps) {
 
     function removeFromCart(id: number){
         setCartItems(currItems => {
-            return currItems.filter(item => item.id ! == id);
+            return currItems.filter(item => item.id !== id);
         })
     }
 
