@@ -2,9 +2,12 @@
   "name": "ecommerce-app",
   "private": true,
   "version": "0.0.0",
+  "homepage": "http://billymayshere32.github.io/ecommerce-app",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
@@ -19,6 +22,7 @@
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.9",
     "@vitejs/plugin-react": "^3.0.0",
+    "gh-pages": "^4.0.0",
     "typescript": "^4.9.3",
     "vite": "^4.0.0"
   }
