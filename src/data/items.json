@@ -3,30 +3,30 @@
       "id": 1,
       "name": "Basic Package",
       "price": 19.99,
-      "imgUrl": "dist/imgs/basic.jpg"
+      "imgUrl": "imgs/basic.jpg"
     },
     {
       "id": 2,
       "name": "Standard Package",
       "price": 39.99,
-      "imgUrl": "dist/imgs/standard.jpg"
+      "imgUrl": "imgs/standard.jpg"
     },
     {
       "id": 3,
       "name": "Premium Package",
       "price": 79.99,
-      "imgUrl": "dist/imgs/premium.jpg"
+      "imgUrl": "imgs/premium.jpg"
     },
     {
       "id": 4,
       "name": "Company Hat",
       "price": 19.99,
-      "imgUrl": "dist/imgs/hat.jpg"
+      "imgUrl": "imgs/hat.jpg"
     },
     {
       "id": 5,
       "name": "Company Shirt",
       "price": 23.99,
-      "imgUrl": "dist/imgs/shirt.jpg"
+      "imgUrl": "imgs/shirt.jpg"
     }
   ]
