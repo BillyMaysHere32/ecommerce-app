@@ -7,8 +7,8 @@ import { Link } from "react-router-dom"
 
 export function Home() {
   return (
-    <div className="">
-      <h2 className="component-title fw-bold">Home Page</h2>
+    <div>
+      <h1>Home</h1>
       <hr></hr>
 
       <Row md={1} className="d-flex flex-column justify-content-between align-items-center mb-5">
@@ -17,7 +17,7 @@ export function Home() {
             <img
               height="500px" style={{ objectFit: "cover"}}
               className="d-block w-100"
-              src={('../imgs/basic.jpg')}
+              src={'../imgs/basic.jpg'}
               alt="First slide"
             />
             <Carousel.Caption>
@@ -30,7 +30,7 @@ export function Home() {
             <img
               height="500px" style={{ objectFit: "cover"}}
               className="d-block w-100"
-              src={('../imgs/standard.jpg')}
+              src={'../imgs/standard.jpg'}
               alt="Second slide"
             />
                         <Carousel.Caption>
@@ -43,7 +43,7 @@ export function Home() {
             <img
               height="500px" style={{ objectFit: "cover"}}
               className="d-block w-100"
-              src={('../imgs/premium.jpg')}
+              src={'../imgs/premium.jpg'}
               alt="Third slide"
             />
                         <Carousel.Caption>
