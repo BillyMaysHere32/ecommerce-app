@@ -1,12 +1,9 @@
 import { Col, Row } from "react-bootstrap"
 import { StoreItem } from "../components/StoreItem"
 import storeItems from "../data/items.json"
-import "../imgs/basic.jpg";
-import "../imgs/hat.jpg";
-import "../imgs/premium.jpg";
-import "../imgs/shirt.jpg";
-import "../imgs/standard.jpg";
+
 //import logo from "../imgs/basic.jpg";
+
 
 export function Store() {
   return (

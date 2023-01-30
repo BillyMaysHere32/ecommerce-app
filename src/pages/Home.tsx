@@ -3,15 +3,15 @@ import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Carousel from 'react-bootstrap/Carousel';
 import { Link } from "react-router-dom"
-import basic from "../imgs/basic.jpg";
-import premium from "../imgs/premium.jpg";
-import standard from "../imgs/standard.jpg";
+import basic from "../../public/basic.jpg";
+import premium from "../../public/premium.jpg";
+import standard from "../../public/standard.jpg";
 
 
 export function Home() {
   return (
     <div>
-      <h1>Home Page</h1>
+      <h1>Home</h1>
       <hr></hr>
 
       <Row md={1} className="d-flex flex-column justify-content-between align-items-center mb-5">
