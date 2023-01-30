@@ -3,7 +3,7 @@
       "id": 1,
       "name": "Basic Package",
       "price": 19.99,
-      "imgUrl": "../imgs/basic.jpg"
+      "imgUrl": "/basic.jpg"
     },
     {
       "id": 2,
