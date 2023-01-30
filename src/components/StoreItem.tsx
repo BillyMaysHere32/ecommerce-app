@@ -1,6 +1,7 @@
 import { Button, Card } from 'react-bootstrap'
 import { useShoppingCart } from '../context/ShoppingCartContext';
 import { formatCurrency } from '../utilities/formatCurrency'
+import standard from "../../public/standard.jpg";
 
 type StoreItemProps = {
     id: number; 
@@ -19,7 +20,7 @@ export function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
   return (
     <Card className='h-100'>
       <img src={imgUrl} height="200px" style={{ objectFit: "cover"}} />
-      <img src={"../../public/premium.jpg"} height="200px" style={{ objectFit: "cover"}} />
+      <img src={standard} height="200px" style={{ objectFit: "cover"}} />
       {/* <Card.Img variant="top" src={imgUrl} height="200px" style={{ objectFit: "cover"}} /> */}
       {/* 'cover' so image aspet ratio looks right */}
       <Card.Body className="d-flex flex-column">
