@@ -20,9 +20,50 @@ export function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
     removeFromCart } = useShoppingCart();
   const quantity = getItemQuantity(id);
 
+//   const localImages = {
+//     basicImg: require("../../public/imgs/basic.jpg"),
+//     hatImg: require("../../public/imgs/hat.jpg"),
+//     shirtImg: require("../../public/imgs/shirt.jpg"),
+//     standardImg: require("../../public/imgs/standard.jpg"),
+//     premiumImg: require("../../public/imgs/premium.jpg"),
+//   };
+
+  // Dynamically access image by Id
+// const getImageById = (id: number) => {
+//   switch (id) {
+//     case 1:
+//       return localImages.basicImg;
+//     case 2:
+//       return localImages.standardImg;
+//     case 3:
+//       return localImages.premiumImg;
+//     case 4:
+//       return localImages.hatImg;
+//     case 5:
+//       return localImages.shirtImg;
+//   }
+// };
+function getImage(id: number) {
+  if (id === 1) {
+      return basicImg;
+  }
+  if (id === 2) {
+      return standardImg;
+  }
+  if (id === 3) {
+    return premiumImg;
+}
+if (id === 4) {
+  return hatImg;
+}
+  return shirtImg;
+}
+
+
   return (
     <Card className='h-100'>
-      <Card.Img variant="top" src={basicImg} height="200px" style={{ objectFit: "cover"}} />
+      <Card.Img variant="top" src={getImage(id)} height="200px" style={{ objectFit: "cover"}} />
+      {/* <Card.Img variant="top" src={(id === 1) ? basicImg : hatImg} height="200px" style={{ objectFit: "cover"}} /> */}
       {/* 'cover' so image aspet ratio looks right */}
       <Card.Body className="d-flex flex-column">
         <Card.Title className="d-flex justify-content-between align-items-baseline mb-4">
