@@ -24,9 +24,11 @@ export function Home() {
               alt="First slide"
             />
             <Carousel.Caption>
-            <Link to="/ecommerce-app/store">
-              <Button variant="outline-light">Store</Button>
-            </Link>
+              <h3>Example Item Slide</h3>
+              <p>This is the Basic Package.</p>
+              <Link to="/ecommerce-app/store">
+                <Button variant="outline-light">Shop Now</Button>
+              </Link>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -36,10 +38,12 @@ export function Home() {
               src={standard}
               alt="Second slide"
             />
-                        <Carousel.Caption>
-            <Link to="/ecommerce-app/store">
-              <Button variant="outline-light">Store</Button>
-            </Link>
+            <Carousel.Caption>
+              <h3>Example Item Slide</h3>
+              <p>This is the Standard Package.</p>
+              <Link to="/ecommerce-app/store">
+                <Button variant="outline-light">Shop Now</Button>
+              </Link>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -49,10 +53,12 @@ export function Home() {
               src={premium}
               alt="Third slide"
             />
-                        <Carousel.Caption>
-            <Link to="/ecommerce-app/store">
-              <Button variant="outline-light">Store</Button>
-            </Link>
+            <Carousel.Caption>
+              <h3>Example Item Slide</h3>
+              <p>This is the Premium Package.</p>
+              <Link to="/ecommerce-app/store">
+                <Button variant="outline-light">Shop Now</Button>
+              </Link>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
