@@ -52,12 +52,12 @@ function getImage(id: number) {
   }
   if (id === 3) {
     return premiumImg;
-}
-if (id === 4) {
-  return hatImg;
-}
-  return shirtImg;
-}
+  }
+  if (id === 4) {
+    return hatImg;
+  }
+    return shirtImg;
+  }
 
 
   return (

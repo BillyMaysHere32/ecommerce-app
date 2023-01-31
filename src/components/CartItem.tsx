@@ -2,6 +2,11 @@ import { useShoppingCart } from "../context/ShoppingCartContext"
 import storeItems from "../data/items.json"
 import { Button, Stack } from "react-bootstrap"
 import { formatCurrency } from "../utilities/formatCurrency"
+import basicImg from "../../public/imgs/basic.jpg";
+import hatImg from "../../public/imgs/hat.jpg";
+import shirtImg from "../../public/imgs/shirt.jpg";
+import standardImg from "../../public/imgs/standard.jpg";
+import premiumImg from "../../public/imgs/premium.jpg";
 
 type CartItemProps = {
     id: number;
@@ -13,10 +18,26 @@ export function CartItem({id, quantity}: CartItemProps) {
     const item = storeItems.find(item => item.id === id)
     if (item == null) return null
 
+    function getImage(id: number) {
+      if (id === 1) {
+          return basicImg;
+      }
+      if (id === 2) {
+          return standardImg;
+      }
+      if (id === 3) {
+        return premiumImg;
+      }
+      if (id === 4) {
+          return hatImg;
+      }
+          return shirtImg;
+      }
+
     return (
         <Stack direction="horizontal" gap={2} className="d-flex align-items-center">
           <img
-            src={ item.imgUrl }
+            src={getImage(id)}
             style={{ width: "125px", height: "75px", objectFit: "cover" }}
           />
           <div className="me-auto">
