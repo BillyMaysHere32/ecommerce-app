@@ -11,15 +11,15 @@ export function About() {
     <div className='component'>
       <h2 className="component-title fw-bold">About Me</h2>
       <hr></hr>
-      <Container className=" mt-5">
+      <Container className="mb-5 mt-5">
       <Row className="d-flex flex-row justify-content-between align-items-center g-5">
-          <Col md={12} lg={6} className="d-flex flex-column justify-content-center align-items-center">
+          <Col md={12} lg={12} className="d-flex flex-column justify-content-center align-items-center">
             <img src={me} height="200px" style={{ objectFit: "cover"}}
              className="profile mb-5 rounded-circle" alt="me" />
             <p className="lead">I am a MERN full stack developer that enjoys creating responsive applications using modern tools such as React and NodeJs, with focus on user experience. My passion is problem solving and ultimately to develop things that propel businesses forward. I love the outdoors and my other hobbies include golf, video games, garage gyms and anything that is Star Wars.</p>
           </Col>
 
-          <Col className="pt-5">
+          <Col className="">
             
           </Col>
         </Row>
