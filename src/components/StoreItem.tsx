@@ -1,11 +1,11 @@
 import { Button, Card } from 'react-bootstrap'
 import { useShoppingCart } from '../context/ShoppingCartContext';
 import { formatCurrency } from '../utilities/formatCurrency'
-import basic from "../../public/imgs/basic.jpg";
-import hat from "../imgs/hat.jpg";
-import shirt from "../imgs/shirt.jpg";
-import standard from "../imgs/standard.jpg";
-import premium from "../imgs/premium.jpg";
+import basicImg from "../../public/imgs/basic.jpg";
+import hatImg from "../../public/imgs/hat.jpg";
+import shirtImg from "../../public/imgs/shirt.jpg";
+import standardImg from "../../public/imgs/standard.jpg";
+import premiumImg from "../../public/imgs/premium.jpg";
 
 
 type StoreItemProps = {
@@ -22,7 +22,7 @@ export function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
 
   return (
     <Card className='h-100'>
-      <Card.Img variant="top" src={imgUrl} height="200px" style={{ objectFit: "cover"}} />
+      <Card.Img variant="top" src={basicImg} height="200px" style={{ objectFit: "cover"}} />
       {/* 'cover' so image aspet ratio looks right */}
       <Card.Body className="d-flex flex-column">
         <Card.Title className="d-flex justify-content-between align-items-baseline mb-4">
